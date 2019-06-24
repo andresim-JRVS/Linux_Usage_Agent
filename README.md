@@ -2,9 +2,9 @@
 This project monitors the CPU and memory usage across various machines. The usage statistics and machine information are stored within a PostgresSQL database. This allows users to get details on cluster usage and plan for future growth.
 
 ## Architecture and Design
-![enter image description here](https://picasaweb.google.com/111162805281333903242/6706223186306464801#6706223184459835170 "Architecture Diagram")
+![enter image description here](https://lh3.googleusercontent.com/9icniz8-q1Gpbee-Ubb2EHuWCz_QEkQHQ6IHDz-Fe-ftPLW_VY5vfYuyG8Ubaf9pev9c8Ob0XpD8 "Architecture Diagram")
 
-As seen above, the Bash Agent scripts run on each machine within the cluster. The scripts will pass the information they gather to the PostgresSQL instance where it will be stored for further analysis.
+As seen above, the Host Agent scripts run on each machine within the cluster. The scripts will pass the information they gather to the PostgresSQL instance where it will be stored for further analysis.
 
 The SQL tables themselves store quite a bit of information. There are two tables:
 **host_info**
